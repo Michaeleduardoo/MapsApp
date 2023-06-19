@@ -81,12 +81,45 @@ export const CategoryBox = styled.div<{ isActive: boolean }>`
   align-items: center;
   margin: 10px;
   cursor: pointer;
+
+  @media all and (max-width: 500px) {
+    width: 124px;
+    height: 124px;
+    font-size: 15px;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+  }
+
+  @media all and (max-width: 300px) {
+    width: 80px;
+    height: 80px;
+    font-size: 10px;
+  }
 `;
 
 export const CategoryImage = styled.img`
   width: 70px;
   height: 70px;
   margin-bottom: 5px;
+
+  @media all and (max-width: 500px) {
+    width: 50px;
+    height: 50px;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 30px;
+    height: 30px;
+  }
+
+  @media all and (max-width: 300px) {
+    width: 25px;
+    height: 25px;
+  }
 `;
 
 export const ButtonContainer = styled.div`

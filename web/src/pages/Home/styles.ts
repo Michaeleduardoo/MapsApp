@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
-
-
 export const Conteiner = styled.div`
   width: 100%;
   height: 100vh;
-  background: url("./home-background.svg") #CAECF7;
-  background-size:cover;
+  background: url("./home-background.svg") #caecf7;
+  background-size: cover;
   background-color: ${(props) => props.theme.background};
   display: flex;
-  
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -17,12 +15,27 @@ export const Conteiner = styled.div`
 
 export const Title = styled.h1`
   font-size: 60px;
-  font-weight:700;
+  font-weight: 700;
   color: ${(props) => props.theme.primary};
   padding-bottom: 50px;
   text-align: center;
   max-width: 500px;
- 
+
+  @media all and (max-width: 500px) {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  @media all and (max-width: 400px) {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  @media all and (max-width: 300px) {
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 20px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -30,7 +43,20 @@ export const SubTitle = styled.p`
   padding-bottom: 50px;
   text-align: center;
   max-width: 490px;
-  line-height:35px;
+  line-height: 35px;
+  @media all and (max-width: 500px) {
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media all and (max-width: 400px) {
+    font-size: 20px;
+  }
+
+  @media all and (max-width: 300px) {
+    font-size: 18px;
+  }
 `;
 
 export const BoxButton = styled.div`
@@ -58,14 +84,17 @@ export const Button = styled.button`
   padding-left: 50px;
 
   &:hover {
-   background: #1F77BD;
-   transition:0.3s;
+    background: #1f77bd;
+    transition: 0.3s;
   }
 
-  &:active{
-    opacity:0.8;
+  &:active {
+    opacity: 0.8;
   }
 
+  @media all and (max-width: 300px) {
+    font-size: 14px;
+  }
 `;
 
 export const LeftBox = styled.div`
@@ -87,5 +116,9 @@ export const Img = styled.img.attrs(() => ({
   src: "imgLocal.png",
 }))`
   width: 85%;
-  margin-right:8%
+  margin-right: 8%;
+
+  @media all and (max-width: 800px) {
+    margin-right: 0%;
+  }
 `;
