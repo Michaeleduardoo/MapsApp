@@ -61,7 +61,7 @@ https://github.com/Michaeleduardoo/MapsApp/assets/106412874/5982271c-3c50-418b-9
 </div>
 
 <h2>Site Abaixo</h2>
-<a href="https://local-mapa.netlify.app/"> 
+<a target="_blank" href="https://local-mapa.netlify.app/"> 
 
    <img src="https://img.shields.io/website-up-down-green-red/http/monip.org.svg" alt="TypeScript">
    
