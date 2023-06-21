@@ -4,7 +4,7 @@ import { createConnection } from "typeorm";
 import cors from "cors";
 import * as StoreControll from "./src/api/StoreControll";
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 async function startup() {
   await createConnection();
