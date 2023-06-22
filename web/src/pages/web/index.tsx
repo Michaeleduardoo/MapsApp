@@ -38,7 +38,7 @@ export default function Web() {
   const { coords } = useGetLocation();
 
   async function onSumbmit() {
-    const resquest = await fetch(`http://localhost:3000//store`, {
+    const resquest = await fetch(`http://localhost:4000//store`, {
       method: "POST",
       headers: {
         Accept: "application/json",
