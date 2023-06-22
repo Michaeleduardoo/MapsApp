@@ -8,12 +8,14 @@
     "create-expo-app": "^2.0.3",
     "exact": "^0.8.0",
     "expo": "^48.0.19",
-    "expo-cli": "^6.3.8"
+    "expo-cli": "^6.3.8",
+    "nodemon": "^2.0.22"
   },
   "name": "mapsapp",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
