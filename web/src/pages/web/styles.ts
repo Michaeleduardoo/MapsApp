@@ -83,8 +83,8 @@ export const CategoryBox = styled.div<{ isActive: boolean }>`
   cursor: pointer;
 
   @media all and (max-width: 500px) {
-    width: 124px;
-    height: 124px;
+    width: 120px;
+    height: 120px;
     font-size: 15px;
   }
 
