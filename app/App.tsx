@@ -37,7 +37,7 @@ function HomeScreen() {
   const filterMark = markes.filter((mah) => mah.category === filter);
 
   useEffect(() => {
-    fetch("http://192.168.1.10:3000//store").then(async (resquest) => {
+    fetch("http://192.168.1.10:4000//store").then(async (resquest) => {
       const data = await resquest.json();
 
       setMarkes(data);

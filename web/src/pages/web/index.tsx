@@ -38,7 +38,7 @@ export default function Web() {
   const { coords } = useGetLocation();
 
   async function onSumbmit() {
-    const resquest = await fetch(`http://localhost:4000//store`, {
+    const resquest = await fetch(`https://maps-local.vercel.app`, {
       method: "POST",
       headers: {
         Accept: "application/json",
