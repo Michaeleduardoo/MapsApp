@@ -4,7 +4,7 @@ import { createConnection } from "typeorm";
 import cors from "cors";
 import * as StoreControll from "./src/api/StoreControll";
 
-const PORT = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
 async function startup() {
   await createConnection();
@@ -16,8 +16,8 @@ async function startup() {
   app.post("//store", StoreControll.save);
   app.get("//store", StoreControll.getAll);
 
-  app.listen(PORT, () => {
-    console.log("App running on port " + 4000);
+  app.listen(port, () => {
+    console.log("App running on port " + port);
   });
 }
 
