@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "app": "^0.1.0",
+    "build": "^0.1.4",
     "create-expo-app": "^2.0.3",
     "exact": "^0.8.0",
     "expo": "^48.0.19",
